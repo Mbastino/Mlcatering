@@ -1,0 +1,29 @@
+.logo{
+    font-family: 'Inspiration', cursive;
+color: yellow;
+font-size: 90px;
+width: 100px;
+height: 110px;
+align-items: center;
+}
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+.nav-link{
+    font-size: 20px;
+    color: white;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--bs-navbar-active-color);
+    background-color: white;
+    border-radius: 10px;
+}
+.navbar-toggler{
+    background-color: white;
+    border: white;
+    transition: none;
+}
