@@ -31,6 +31,7 @@
 
 .navbar {
   padding: 0;
+  --bs-navbar-hover-color: white;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
@@ -415,6 +416,11 @@ footer h6 {
 }
 .galeria .imgColab .imgN {
   max-width: 100%;
+}
+.galeria .carousel {
+  position: relative;
+  width: 750px;
+  left: 22%;
 }
 
 .contac {
