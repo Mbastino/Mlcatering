@@ -31,7 +31,7 @@
 
 .navbar {
   padding: 0;
-  --bs-navbar-hover-color: white;
+  --bs-navbar-hover-color: $color_blanco;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
@@ -74,7 +74,7 @@ footer h6 {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: none;
 }
 
 .titulo {
@@ -458,6 +458,15 @@ footer h6 {
 }
 .contac .segContainer .seguinos {
   padding: 20px;
+}
+
+@media screen and (max-width: 1317px) {
+  .titulo {
+    font-size: auto;
+  }
+  .titulo:hover {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
