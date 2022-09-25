@@ -31,7 +31,7 @@
 
 .navbar {
   padding: 0;
-  --bs-navbar-hover-color: white;
+  --bs-navbar-hover-color: $color_blanco;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
