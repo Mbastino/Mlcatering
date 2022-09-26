@@ -71,6 +71,7 @@ footer h6 {
 .fondo {
   background-image: url(./img/imagenprincipal.jpg);
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -460,12 +461,76 @@ footer h6 {
   padding: 20px;
 }
 
-@media screen and (max-width: 1317px) {
-  .titulo {
-    font-size: auto;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*Nosotros*/
+  .nosotros .quienesText {
+    flex-direction: column;
   }
-  .titulo:hover {
-    display: none;
+  .nosotros .quienesText .aboutTxt {
+    width: 100%;
+  }
+  .nosotros .about_vmv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros .about_vmv .mision {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .nosotros .about_vmv .vision {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .nosotros .about_vmv .valor {
+    width: 100%;
+    margin-top: 5px;
+  }
+  /*Servicios*/
+  .comedor {
+    flex-direction: column;
+    align-items: center;
+  }
+  .comedor .inSitu {
+    width: 100%;
+  }
+  .comedor .viandas {
+    width: 100%;
+  }
+  .comedor .desYmer {
+    width: 100%;
+  }
+  /*Galeria*/
+  .galeria .carousel {
+    left: 1%;
+  }
+  .galeria .imgColab {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  /*Contacto*/
+  .contac {
+    background-position: 50%;
+    height: 100%;
+    align-items: center;
+  }
+  .contac .contContainer h3 {
+    background-color: black;
+    opacity: 0.8;
+  }
+  .contac .segContainer h3 {
+    background-color: black;
+    opacity: 0.8;
+  }
+  .contac .segContainer .seguinos {
+    padding-left: 50px;
+  }
+  .contac .segContainer .seguinos .contenContacto {
+    display: flex;
+    align-items: center;
+  }
+  .contac .segContainer .seguinos .contenContacto p {
+    margin-bottom: 0;
+    padding: 10px;
   }
 }
 
