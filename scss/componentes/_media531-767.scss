@@ -1,0 +1,90 @@
+@media screen and (min-width:531px) and (max-width:767px) {
+    /*Index*/
+    .titulo{
+        left: 0;
+        background-color: black;
+        opacity: 0.8;
+        &:hover{
+            display: none;
+        }
+    }
+    /*Nosotros*/
+    .nosotros{
+        .quienesText{
+            flex-direction: column;
+            .aboutTxt{
+                width: 100%;
+            }
+        }
+        .about_vmv{
+            flex-direction: column;
+            align-items: center;
+            .mision{
+                width: 100%; 
+                margin-top: 5px;
+            }
+            .vision{
+                width: 100%;
+                margin-top: 5px;
+            }
+            .valor{
+                width: 100%;
+                margin-top: 5px;
+            }
+        }
+    }
+    /*Servicios*/
+  .comedor{
+    flex-direction: column;
+    align-items: center;
+    .inSitu{
+        width: 100%;
+    }
+    .viandas{
+        width: 100%;
+    }
+    .desYmer{
+        width: 100%;
+    }
+  }  
+  /*Galeria*/
+  .galeria{
+    .carousel{
+        left: 1%;
+    }
+    .imgColab{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+  }
+  /*Contacto*/
+  .contac{
+    background-position: 50%;
+    height: 100%;
+    align-items: center;
+    .contContainer{
+        h3{
+            background-color: black;
+            opacity: 0.8;
+        }
+    }
+    .segContainer{
+        h3{
+            background-color: black;
+            opacity: 0.8;
+        }
+        .seguinos{
+            padding-left: 50px;
+            .contenContacto{
+                display: flex;
+                align-items: center;
+                p{
+                    margin-bottom: 0;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+  }
+
+}

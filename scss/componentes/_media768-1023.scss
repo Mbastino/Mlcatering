@@ -1,5 +1,14 @@
 @media screen and (min-width:768px) and (max-width:1023px) {
-   /*Nosotros*/
+    /*Index*/
+    .titulo{
+        left: 0;
+        background-color: black;
+        opacity: 0.8;
+        &:hover{
+            display: none;
+        }
+    }
+    /*Nosotros*/
     .nosotros{
         .quienesText{
             flex-direction: column;
