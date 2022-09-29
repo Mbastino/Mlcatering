@@ -68,11 +68,12 @@
     /*Contacto*/
     .contac{
         background-position: 50%;
-        height: 100%;
+        height: 100vh;
         align-items: center;
         .contContainer{
             flex-direction: column;
             .contacto{
+                padding: 0;
                 .mapa{
                     width: 100%;
                 }
@@ -80,16 +81,18 @@
             h3{
                 background-color: black;
                 opacity: 0.8;
+                margin: 5px 0 0 0;
             }
         }
         .segContainer{
             flex-direction: column;
+     
             h3{
                 background-color: black;
                 opacity: 0.8;
             }
             .seguinos{
-                padding-left: 50px;
+                padding: 0 0 20px 0;
                 .contenContacto{
                     display: flex;
                     align-items: center;

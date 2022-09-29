@@ -420,7 +420,7 @@ footer h6 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 82vh;
+  height: 100vh;
   flex-direction: column;
 }
 .contac .contContainer {
@@ -588,7 +588,7 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100%;
+    height: 100vh;
     align-items: center;
   }
   .contac .contContainer h3 {
@@ -674,11 +674,14 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100%;
+    height: 100vh;
     align-items: center;
   }
   .contac .contContainer {
     flex-direction: column;
+  }
+  .contac .contContainer .contacto {
+    padding: 0;
   }
   .contac .contContainer .contacto .mapa {
     width: 100%;
@@ -686,6 +689,7 @@ footer h6 {
   .contac .contContainer h3 {
     background-color: black;
     opacity: 0.8;
+    margin: 5px 0 0 0;
   }
   .contac .segContainer {
     flex-direction: column;
@@ -695,7 +699,7 @@ footer h6 {
     opacity: 0.8;
   }
   .contac .segContainer .seguinos {
-    padding-left: 50px;
+    padding: 0 0 20px 0;
   }
   .contac .segContainer .seguinos .contenContacto {
     display: flex;
