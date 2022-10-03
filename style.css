@@ -674,11 +674,13 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100vh;
+    height: 112vh;
     align-items: center;
   }
   .contac .contContainer {
     flex-direction: column;
+    position: relative;
+    top: 5px;
   }
   .contac .contContainer .contacto {
     padding: 0;
@@ -693,6 +695,8 @@ footer h6 {
   }
   .contac .segContainer {
     flex-direction: column;
+    position: relative;
+    top: 5px;
   }
   .contac .segContainer h3 {
     background-color: black;
