@@ -15,6 +15,9 @@
             .aboutTxt{
                 width: 100%;
             }
+            .bounce-in-top{
+                animation: none;
+            }
         }
         .about_vmv{
             flex-direction: column;
@@ -23,13 +26,22 @@
                 width: 100%; 
                 margin-top: 5px;
             }
+            .slide-in-elliptic-right-fwd{
+                animation: none;
+            }
             .vision{
                 width: 100%;
                 margin-top: 5px;
             }
+            .slide-in-elliptic-top-fwd{
+                animation: none;
+            } 
             .valor{
                 width: 100%;
                 margin-top: 5px;
+            }
+            .slide-in-elliptic-left-fwd{
+                animation: none;
             }
         }
     }
