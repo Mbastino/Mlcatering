@@ -80,8 +80,13 @@
     /*Contacto*/
     .contac{
         background-position: 50%;
-        height: 112vh;
+        height: 100%;
         align-items: center;
+        flex-direction: column;
+        .formulario{
+            width: 300px;
+            margin-top: 10px;
+        }
         .contContainer{
             flex-direction: column;
             position: relative;

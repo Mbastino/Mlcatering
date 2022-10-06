@@ -424,10 +424,50 @@ footer h6 {
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
   height: 100vh;
+  gap: 15px;
+}
+.contac .formulario {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  background-color: black;
+  opacity: 0.8;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.contac .formulario h2 {
+  font-size: 20px;
+  align-self: center;
+  text-decoration: underline;
+}
+.contac .formulario .form-input {
+  width: 100%;
+  padding-bottom: 5px;
+}
+.contac .formulario .form-input label {
+  padding-left: 5px;
+}
+.contac .formulario .form-input input {
+  width: 100%;
+  border-radius: 10px;
+}
+.contac .formulario textarea {
+  align-self: center;
+  width: 90%;
+  max-height: 200px;
+}
+.contac .formulario .botones {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+  padding: 15px 5px;
+}
+.contac .formulario select {
+  margin: 10px;
 }
 .contac .contContainer {
   display: flex;
@@ -512,8 +552,13 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100vh;
+    height: 100%;
     align-items: center;
+    flex-direction: column;
+  }
+  .contac .formulario {
+    width: 300px;
+    margin-top: 10px;
   }
   .contac .contContainer h3 {
     background-color: black;
@@ -606,12 +651,24 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     align-items: center;
+    flex-direction: column;
+  }
+  .contac .formulario {
+    width: 300px;
+    margin-top: 10px;
+  }
+  .contac .contContainer {
+    gap: 5px;
   }
   .contac .contContainer h3 {
     background-color: black;
     opacity: 0.8;
+  }
+  .contac .contContainer .contacto {
+    padding: 0;
   }
   .contac .segContainer h3 {
     background-color: black;
@@ -704,8 +761,13 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 112vh;
+    height: 100%;
     align-items: center;
+    flex-direction: column;
+  }
+  .contac .formulario {
+    width: 300px;
+    margin-top: 10px;
   }
   .contac .contContainer {
     flex-direction: column;

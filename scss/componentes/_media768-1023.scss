@@ -60,8 +60,13 @@
   /*Contacto*/
   .contac{
     background-position: 50%;
-    height: 100vh;
+    height: 100%;
     align-items: center;
+    flex-direction: column;
+    .formulario{
+        width: 300px;
+        margin-top: 10px;
+    }
     .contContainer{
         h3{
             background-color: black;
