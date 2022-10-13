@@ -72,6 +72,12 @@
         align-items: center;
         .seguinos{
             padding: 20px;
+            .contenContacto{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-top: 10px;
+            }
         }
     }
 }

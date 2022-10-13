@@ -277,6 +277,12 @@ footer h6 {
 .contac .segContainer .seguinos {
   padding: 20px;
 }
+.contac .segContainer .seguinos .contenContacto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /*Index*/
