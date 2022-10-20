@@ -2,11 +2,14 @@
     background-image: url(./img/fondo-contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+    top: 0;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     height: 100vh;
     gap: 15px;
     .formulario{
@@ -49,29 +52,42 @@
             margin: 10px;
         }
     }
-    .contContainer{
-        display: flex;
-        align-items: center;
-        .contacto{
-            padding: 20px;
-            .contenContacto{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                padding-top: 10px;
+    .datos{
+        position: relative;
+        top: 7%;
+        .contContainer{
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 20%;
+            .contacto{
+                padding: 10px;
+                .contenContacto{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding-top: 10px;
+                }
+            }
+            .mapa{
+                max-width: 400px;
+                max-height: 200px;
+            }
+    
+        }
+        .segContainer{
+            display: flex;
+            align-items: center;
+            .seguinos{
+                padding: 10px;
+                .contenContacto{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding-top: 10px;
+                }
             }
         }
-        .mapa{
-            max-width: 400px;
-            max-height: 200px;
-        }
-
     }
-    .segContainer{
-        display: flex;
-        align-items: center;
-        .seguinos{
-            padding: 20px;
-        }
-    }
+    
 }

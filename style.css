@@ -279,11 +279,14 @@ footer h6 {
   background-image: url(./img/fondo-contacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  top: 0;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   height: 100vh;
   gap: 15px;
 }
@@ -327,29 +330,41 @@ footer h6 {
 .contac .formulario select {
   margin: 10px;
 }
-.contac .contContainer {
+.contac .datos {
+  position: relative;
+  top: 7%;
+}
+.contac .datos .contContainer {
   display: flex;
   align-items: center;
+  position: relative;
+  top: 20%;
 }
-.contac .contContainer .contacto {
-  padding: 20px;
+.contac .datos .contContainer .contacto {
+  padding: 10px;
 }
-.contac .contContainer .contacto .contenContacto {
+.contac .datos .contContainer .contacto .contenContacto {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-top: 10px;
 }
-.contac .contContainer .mapa {
+.contac .datos .contContainer .mapa {
   max-width: 400px;
   max-height: 200px;
 }
-.contac .segContainer {
+.contac .datos .segContainer {
   display: flex;
   align-items: center;
 }
-.contac .segContainer .seguinos {
-  padding: 20px;
+.contac .datos .segContainer .seguinos {
+  padding: 10px;
+}
+.contac .datos .segContainer .seguinos .contenContacto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
