@@ -6,7 +6,8 @@
 footer{
     position: fixed;
     bottom: 0;
-    background-color: $color_footer;
+    background: rgb(105,20,14);
+    background: radial-gradient(circle, rgba(105,20,14,1) 0%, rgba(213,137,54,1) 100%);
     @include tamanof (100%,20px);
     @include posfooter;
     h6{
