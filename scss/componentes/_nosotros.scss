@@ -2,6 +2,7 @@
     background-image: url(./img/fondopage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
     .quienesText{
         display: flex;
         justify-content: space-around ;
@@ -16,6 +17,7 @@
             vertical-align: middle;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+        
     }
     .about_vmv{
         display: flex;
@@ -31,14 +33,14 @@
                 text-decoration: underline double;
             }
         }
+        
         .vision{
             @extend .mision;
-            margin: 0;
-            padding: 0;
             h3{
                 text-decoration: underline double;
             }
         }
+
         .valor{
             @extend .mision;
             h3{
@@ -46,9 +48,8 @@
             }
             .listValor{
                 list-style-type: none;
-                margin: 0;
-                padding: 0;
             }
         }
+        
     }
 }

@@ -5,8 +5,9 @@
 }
 
 .headerRest {
-  background: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
-  position: relative;
+  background-color: brown;
+  opacity: 0.7;
+  position: absolute;
   z-index: 1;
   width: 100%;
 }
@@ -58,7 +59,7 @@
 footer {
   position: fixed;
   bottom: 0;
-  background: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  background-color: brown;
   width: 100%;
   height: 20px;
   display: flex;
@@ -72,17 +73,16 @@ footer h6 {
 }
 
 .fondo {
-  background-image: url(/img/imagenprincipal.jpg);
+  background-image: url(./img/imagenprincipal.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   width: 100%;
-  height: 81vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0px;
+  position: relative;
 }
 
 .titulo {
@@ -124,179 +124,50 @@ footer h6 {
     opacity: 1;
   }
 }
-.quienesText {
+.nosotros {
+  background-image: url(./img/fondopage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.nosotros .quienesText {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.quienesText .aboutTxt {
+.nosotros .quienesText .aboutTxt {
   color: white;
   background-color: black;
-  border-radius: 10px;
   opacity: 0.7;
-  width: 50%;
+  width: 40%;
   height: 30%;
   text-align: center;
   vertical-align: middle;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-<<<<<<< HEAD
 .nosotros .about_vmv {
-=======
-.quienesText .fade-in-top {
-  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes fade-in-top {
-  0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-top {
-  0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.quienesText .aboutImg .fade-in-top {
-  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes fade-in-top {
-  0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-top {
-  0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.about_vmv {
->>>>>>> prueba
   display: flex;
   justify-content: space-around;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.about_vmv .mision, .about_vmv .valor, .about_vmv .vision {
+.nosotros .about_vmv .mision, .nosotros .about_vmv .valor, .nosotros .about_vmv .vision {
   background-color: black;
   opacity: 0.7;
-  border-radius: 10px;
   color: white;
   width: 30%;
   text-align: center;
 }
-.about_vmv .mision h3, .about_vmv .valor h3, .about_vmv .vision h3 {
+.nosotros .about_vmv .mision h3, .nosotros .about_vmv .valor h3, .nosotros .about_vmv .vision h3 {
   text-decoration: underline double;
-}
-<<<<<<< HEAD
-.nosotros .about_vmv .vision {
-  margin: 0;
-  padding: 0;
 }
 .nosotros .about_vmv .vision h3 {
   text-decoration: underline double;
 }
 .nosotros .about_vmv .valor h3 {
-=======
-.about_vmv .fade-in-bottom {
-  -webkit-animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.about_vmv .vision h3 {
->>>>>>> prueba
   text-decoration: underline double;
 }
-.about_vmv .valor h3 {
-  text-decoration: underline double;
-}
-.about_vmv .valor .listValor {
+.nosotros .about_vmv .valor .listValor {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-<<<<<<< HEAD
-=======
-}
-.about_vmv .fade-in-right {
-  -webkit-animation: fade-in-right 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-right 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes fade-in-right {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-right {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
->>>>>>> prueba
 }
 
 .comedor {
@@ -355,50 +226,10 @@ footer h6 {
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   height: 100vh;
-  gap: 15px;
-}
-.contac .formulario {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 500px;
-  background-color: black;
-  opacity: 0.8;
-  border: 2px solid white;
-  border-radius: 10px;
-}
-.contac .formulario h2 {
-  font-size: 20px;
-  align-self: center;
-  text-decoration: underline;
-}
-.contac .formulario .form-input {
-  width: 100%;
-  padding-bottom: 5px;
-}
-.contac .formulario .form-input label {
-  padding-left: 5px;
-}
-.contac .formulario .form-input input {
-  width: 100%;
-  border-radius: 10px;
-}
-.contac .formulario textarea {
-  align-self: center;
-  width: 90%;
-  max-height: 200px;
-}
-.contac .formulario .botones {
-  display: flex;
-  align-self: flex-end;
-  gap: 10px;
-  padding: 15px 5px;
-}
-.contac .formulario select {
-  margin: 10px;
 }
 .contac .contContainer {
   display: flex;
@@ -423,12 +254,6 @@ footer h6 {
 }
 .contac .segContainer .seguinos {
   padding: 20px;
-}
-.contac .segContainer .seguinos .contenContacto {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-top: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -489,13 +314,8 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100%;
+    height: 100vh;
     align-items: center;
-    flex-direction: column;
-  }
-  .contac .formulario {
-    width: 300px;
-    margin-top: 10px;
   }
   .contac .contContainer h3 {
     background-color: black;
@@ -534,9 +354,6 @@ footer h6 {
   .nosotros .quienesText .aboutTxt {
     width: 100%;
   }
-  .nosotros .quienesText .bounce-in-top {
-    animation: none;
-  }
   .nosotros .about_vmv {
     flex-direction: column;
     align-items: center;
@@ -545,22 +362,13 @@ footer h6 {
     width: 100%;
     margin-top: 5px;
   }
-  .nosotros .about_vmv .slide-in-elliptic-right-fwd {
-    animation: none;
-  }
   .nosotros .about_vmv .vision {
     width: 100%;
     margin-top: 5px;
   }
-  .nosotros .about_vmv .slide-in-elliptic-top-fwd {
-    animation: none;
-  }
   .nosotros .about_vmv .valor {
     width: 100%;
     margin-top: 5px;
-  }
-  .nosotros .about_vmv .slide-in-elliptic-left-fwd {
-    animation: none;
   }
   /*Servicios*/
   .comedor {
@@ -588,24 +396,12 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     align-items: center;
-    flex-direction: column;
-  }
-  .contac .formulario {
-    width: 300px;
-    margin-top: 10px;
-  }
-  .contac .contContainer {
-    gap: 5px;
   }
   .contac .contContainer h3 {
     background-color: black;
     opacity: 0.8;
-  }
-  .contac .contContainer .contacto {
-    padding: 0;
   }
   .contac .segContainer h3 {
     background-color: black;
@@ -641,9 +437,6 @@ footer h6 {
   .nosotros .quienesText .aboutTxt {
     width: 100%;
   }
-  .nosotros .quienesText .bounce-in-top {
-    animation: none;
-  }
   .nosotros .quienesText .aboutImg .imgNosotros {
     width: 100%;
   }
@@ -655,22 +448,13 @@ footer h6 {
     width: 100%;
     margin-top: 5px;
   }
-  .nosotros .about_vmv .slide-in-elliptic-right-fwd {
-    animation: none;
-  }
   .nosotros .about_vmv .vision {
     width: 100%;
     margin-top: 5px;
   }
-  .nosotros .about_vmv .slide-in-elliptic-top-fwd {
-    animation: none;
-  }
   .nosotros .about_vmv .valor {
     width: 100%;
     margin-top: 5px;
-  }
-  .nosotros .about_vmv .slide-in-elliptic-left-fwd {
-    animation: none;
   }
   /*Servicios*/
   .comedor {
@@ -698,18 +482,11 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100%;
+    height: 100vh;
     align-items: center;
-    flex-direction: column;
-  }
-  .contac .formulario {
-    width: 300px;
-    margin-top: 10px;
   }
   .contac .contContainer {
     flex-direction: column;
-    position: relative;
-    top: 5px;
   }
   .contac .contContainer .contacto {
     padding: 0;
@@ -724,8 +501,6 @@ footer h6 {
   }
   .contac .segContainer {
     flex-direction: column;
-    position: relative;
-    top: 5px;
   }
   .contac .segContainer h3 {
     background-color: black;
