@@ -174,10 +174,12 @@ footer h6 {
   display: flex;
   justify-content: space-around;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px;
 }
 .nosotros .about_vmv .mision, .nosotros .about_vmv .valor, .nosotros .about_vmv .vision {
   background-color: black;
   border-radius: 10px;
+  font-size: 15px;
   opacity: 0.7;
   color: white;
   width: 30%;
@@ -186,14 +188,14 @@ footer h6 {
 .nosotros .about_vmv .mision h3, .nosotros .about_vmv .valor h3, .nosotros .about_vmv .vision h3 {
   text-decoration: underline double;
 }
-.nosotros .about_vmv .fade-in-bottom {
-  -webkit-animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+.nosotros .about_vmv .fade-in-top {
+  -webkit-animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-@-webkit-keyframes fade-in-bottom {
+@-webkit-keyframes fade-in-top {
   0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
     opacity: 0;
   }
   100% {
@@ -202,10 +204,10 @@ footer h6 {
     opacity: 1;
   }
 }
-@keyframes fade-in-bottom {
+@keyframes fade-in-top {
   0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
     opacity: 0;
   }
   100% {
@@ -280,10 +282,50 @@ footer h6 {
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: center;
   height: 100vh;
+  gap: 15px;
+}
+.contac .formulario {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  background-color: black;
+  opacity: 0.8;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.contac .formulario h2 {
+  font-size: 20px;
+  align-self: center;
+  text-decoration: underline;
+}
+.contac .formulario .form-input {
+  width: 100%;
+  padding-bottom: 5px;
+}
+.contac .formulario .form-input label {
+  padding-left: 5px;
+}
+.contac .formulario .form-input input {
+  width: 100%;
+  border-radius: 10px;
+}
+.contac .formulario textarea {
+  align-self: center;
+  width: 90%;
+  max-height: 200px;
+}
+.contac .formulario .botones {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+  padding: 15px 5px;
+}
+.contac .formulario select {
+  margin: 10px;
 }
 .contac .contContainer {
   display: flex;

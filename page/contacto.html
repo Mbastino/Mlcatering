@@ -48,7 +48,34 @@
     </nav>
   </header>    
   <section class="contac">
-    <div>
+    <form action="" class="formulario">
+      <h2>Dejanos tu consulta</h2>
+      <div class="form-input">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+      </div>
+      <div class="form-input">
+        <label for="contrasena">Email</label>
+        <input type="email" name="contrasena">
+      </div>
+      <div class="form-input">
+        <label for="celular">Teléfono</label>
+        <input type="tel" name="contrasena">
+      </div>
+      <select name="servicio" id="">
+        <option selected value="servicio">Elegir servicio</option>
+        <option value="insitu">Comedor In situ</option>
+        <option value="viandas">Viandas</option>
+        <option value="desymer">Desayunos y meriendas</option>
+      </select>
+      <textarea name="comentario" id="" placeholder="Dejanos tu comentario"></textarea>
+      <div class="botones">
+        <button type="reset" class="btn btn-light">Limpiar</button>
+        <button type="submit" class="btn btn-light">Enviar</button>
+      </div>
+
+    </form>
+    <div class="datos">
       <div class="contContainer">
         <h3>Contacto</h3>
         <div class="contacto">
