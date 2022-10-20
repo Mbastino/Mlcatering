@@ -1,6 +1,6 @@
 
 .fondo{
-    background-image: url(./img/imagenprincipal.jpg);
+    background-image: url(/img/imagenprincipal.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -9,7 +9,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
+    top: 0px;
 }
 .titulo{
     color: white;

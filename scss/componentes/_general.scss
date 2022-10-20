@@ -4,9 +4,8 @@
     box-sizing: 0;
 }
 .headerRest{
-    background-color: $color_footer;
-    opacity: 0.7;
-    position: absolute;
+    background:linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+    position: relative;
     z-index: 1;
     width: 100%;
 }

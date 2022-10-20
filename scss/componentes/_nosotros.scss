@@ -1,8 +1,5 @@
 .nosotros{
-    background-image: url(./img/fondopage.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+}
     .quienesText{
         display: flex;
         justify-content: space-around ;
@@ -10,12 +7,20 @@
         .aboutTxt{
             color: white;
             background-color: black;
+            border-radius: 10px;
             opacity: 0.7;
-            width: 40%;
+            width: 50%;
             height: 30%;
             text-align: center;
             vertical-align: middle;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .fade-in-top{-webkit-animation:fade-in-top 1.5s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top 1.5s cubic-bezier(.39,.575,.565,1.000) both}
+        @-webkit-keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+        .aboutImg{
+            .fade-in-top{-webkit-animation:fade-in-top 1.5s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top 1.5s cubic-bezier(.39,.575,.565,1.000) both}
+            @-webkit-keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
         }
         
     }
@@ -23,16 +28,20 @@
         display: flex;
         justify-content: space-around;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
         .mision{
             background-color: black;
             opacity: 0.7;
+            border-radius: 10px;
             color: white;
             width: 30%;
             text-align: center;
             h3{
                 text-decoration: underline double;
-            }
+            }   
         }
+        .fade-in-bottom{-webkit-animation:fade-in-bottom 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-bottom 1s cubic-bezier(.39,.575,.565,1.000) both}
+            @-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
         
         .vision{
             @extend .mision;
@@ -48,8 +57,11 @@
             }
             .listValor{
                 list-style-type: none;
+                margin: 0;
+                padding: 0;
             }
         }
+        .fade-in-right{-webkit-animation:fade-in-right 1.5s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-right 1.5s cubic-bezier(.39,.575,.565,1.000) both}
+        @-webkit-keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
         
     }
-}

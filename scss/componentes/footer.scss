@@ -6,7 +6,7 @@
 footer{
     position: fixed;
     bottom: 0;
-    background-color: $color_footer;
+    background:linear-gradient(315deg, #a55c1b 0%, #000000 74%);
     @include tamanof (100%,20px);
     @include posfooter;
     h6{
