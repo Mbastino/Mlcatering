@@ -5,12 +5,15 @@
 }
 
 .headerRest {
-  background-image: url(./img/headers.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .logo {
+  margin: 0;
+  padding: 0;
   font-family: "Inspiration", cursive;
   color: yellow;
   font-size: 90px;
@@ -55,7 +58,7 @@
 footer {
   position: fixed;
   bottom: 0;
-  background-color: brown;
+  background: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
   width: 100%;
   height: 20px;
   display: flex;
@@ -69,7 +72,7 @@ footer h6 {
 }
 
 .fondo {
-  background-image: url(./img/imagenprincipal.jpg);
+  background-image: url(/img/imagenprincipal.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -78,64 +81,143 @@ footer h6 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
+  top: 0px;
 }
 
 .titulo {
   color: white;
   font-style: italic;
-  font-size: 80px;
+  font-size: 90px;
   text-align: center;
   position: absolute;
-  top: 75px;
-  left: 47%;
-}
-.titulo:hover {
-  transition: all 1s;
-  transform: translateX(-350px) scale(1.5, 1.5);
-  background-color: black;
-  opacity: 0.7;
-  border-radius: 20px;
-  -webkit-transform: translateX(-350px) scale(1.3, 1.3);
-  -o-transform: translateX(-350px) scale(1.3, 1.3);
-  -moz-transform: translateX(-350px) scale(1.3, 1.3);
+  top: 30%;
+  left: 50%;
 }
 
-.nosotros {
-  background-image: url(./img/fondopage.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.slide-in-right {
+  -webkit-animation: slide-in-right 1s ease-in-out both;
+  animation: slide-in-right 1s ease-in-out both;
 }
-.nosotros .quienesText {
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.quienesText {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.nosotros .quienesText .aboutTxt {
+.quienesText .aboutTxt {
   color: white;
   background-color: black;
+  border-radius: 10px;
   opacity: 0.7;
-  width: 40%;
+  width: 50%;
   height: 30%;
   text-align: center;
   vertical-align: middle;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+<<<<<<< HEAD
 .nosotros .about_vmv {
+=======
+.quienesText .fade-in-top {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.quienesText .aboutImg .fade-in-top {
+  -webkit-animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about_vmv {
+>>>>>>> prueba
   display: flex;
   justify-content: space-around;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.nosotros .about_vmv .mision, .nosotros .about_vmv .valor, .nosotros .about_vmv .vision {
+.about_vmv .mision, .about_vmv .valor, .about_vmv .vision {
   background-color: black;
   opacity: 0.7;
+  border-radius: 10px;
   color: white;
   width: 30%;
   text-align: center;
 }
-.nosotros .about_vmv .mision h3, .nosotros .about_vmv .valor h3, .nosotros .about_vmv .vision h3 {
+.about_vmv .mision h3, .about_vmv .valor h3, .about_vmv .vision h3 {
   text-decoration: underline double;
 }
+<<<<<<< HEAD
 .nosotros .about_vmv .vision {
   margin: 0;
   padding: 0;
@@ -144,12 +226,77 @@ footer h6 {
   text-decoration: underline double;
 }
 .nosotros .about_vmv .valor h3 {
+=======
+.about_vmv .fade-in-bottom {
+  -webkit-animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.about_vmv .vision h3 {
+>>>>>>> prueba
   text-decoration: underline double;
 }
-.nosotros .about_vmv .valor .listValor {
+.about_vmv .valor h3 {
+  text-decoration: underline double;
+}
+.about_vmv .valor .listValor {
   list-style-type: none;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+=======
+}
+.about_vmv .fade-in-right {
+  -webkit-animation: fade-in-right 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-right 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+>>>>>>> prueba
 }
 
 .comedor {
