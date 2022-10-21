@@ -236,6 +236,34 @@ footer h6 {
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.comedor .text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 .comedor .viandas {
   width: 30%;
   height: 50%;
@@ -243,6 +271,7 @@ footer h6 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .comedor .desYmer {
+  overflow: hidden;
   width: 30%;
   height: 50%;
   text-align: center;
@@ -601,36 +630,46 @@ footer h6 {
     background-position: 50%;
     height: 100vh;
     align-items: center;
-  }
-  .contac .contContainer {
     flex-direction: column;
+    position: relative;
   }
-  .contac .contContainer .contacto {
-    padding: 0;
-  }
-  .contac .contContainer .contacto .mapa {
+  .contac .formulario {
+    position: relative;
+    top: 300px;
     width: 100%;
   }
-  .contac .contContainer h3 {
+  .contac .datos .contContainer {
+    flex-direction: column;
+    top: 60%;
+    width: 100%;
+  }
+  .contac .datos .contContainer .contacto {
+    padding: 0;
+  }
+  .contac .datos .contContainer .contacto .mapa {
+    width: 100%;
+  }
+  .contac .datos .contContainer h3 {
     background-color: black;
     opacity: 0.8;
     margin: 5px 0 0 0;
   }
-  .contac .segContainer {
+  .contac .datos .segContainer {
     flex-direction: column;
+    width: 100%;
   }
-  .contac .segContainer h3 {
+  .contac .datos .segContainer h3 {
     background-color: black;
     opacity: 0.8;
   }
-  .contac .segContainer .seguinos {
+  .contac .datos .segContainer .seguinos {
     padding: 0 0 20px 0;
   }
-  .contac .segContainer .seguinos .contenContacto {
+  .contac .datos .segContainer .seguinos .contenContacto {
     display: flex;
     align-items: center;
   }
-  .contac .segContainer .seguinos .contenContacto p {
+  .contac .datos .segContainer .seguinos .contenContacto p {
     margin-bottom: 0;
     padding: 10px;
   }

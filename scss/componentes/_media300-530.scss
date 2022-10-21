@@ -70,38 +70,52 @@
         background-position: 50%;
         height: 100vh;
         align-items: center;
-        .contContainer{
-            flex-direction: column;
-            .contacto{
-                padding: 0;
-                .mapa{
-                    width: 100%;
+        flex-direction: column;
+        position: relative;
+    
+        .formulario{
+            position: relative;
+            top: 300px;
+            width: 100%;
+        }
+        .datos{
+            .contContainer{
+                flex-direction: column;
+                top: 60%;
+                width: 100%;
+                .contacto{
+                    padding: 0;
+                    .mapa{
+                        width: 100%;
+                    }
+                }
+                h3{
+                    background-color: black;
+                    opacity: 0.8;
+                    margin: 5px 0 0 0;
                 }
             }
-            h3{
-                background-color: black;
-                opacity: 0.8;
-                margin: 5px 0 0 0;
-            }
-        }
-        .segContainer{
-            flex-direction: column;
-     
-            h3{
-                background-color: black;
-                opacity: 0.8;
-            }
-            .seguinos{
-                padding: 0 0 20px 0;
-                .contenContacto{
-                    display: flex;
-                    align-items: center;
-                    p{
-                        margin-bottom: 0;
-                        padding: 10px;
+            .segContainer{
+                flex-direction: column;
+                width: 100%;
+         
+                h3{
+                    background-color: black;
+                    opacity: 0.8;
+                }
+                .seguinos{
+                    padding: 0 0 20px 0;
+                    .contenContacto{
+                        display: flex;
+                        align-items: center;
+                        p{
+                            margin-bottom: 0;
+                            padding: 10px;
+                        }
                     }
                 }
             }
+          }
         }
-      }
+        
 }
