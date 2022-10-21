@@ -54,7 +54,7 @@
     }
     .datos{
         position: relative;
-        top: 7%;
+        top: 5%;
         .contContainer{
             display: flex;
             align-items: center;
@@ -67,6 +67,9 @@
                     align-items: center;
                     gap: 10px;
                     padding-top: 10px;
+                    p{
+                        margin: 0;
+                    }
                 }
             }
             .mapa{
@@ -85,6 +88,9 @@
                     align-items: center;
                     gap: 10px;
                     padding-top: 10px;
+                    p{
+                        margin: 0;
+                    }
                 }
             }
         }
