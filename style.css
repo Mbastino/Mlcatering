@@ -455,25 +455,31 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100vh;
+    height: 200%;
     align-items: center;
+    flex-direction: column;
   }
-  .contac .contContainer h3 {
+  .contac .formulario {
+    position: relative;
+    top: 0%;
+    width: 100%;
+  }
+  .contac .datos .contContainer h3 {
     background-color: black;
     opacity: 0.8;
   }
-  .contac .segContainer h3 {
+  .contac .datos .segContainer h3 {
     background-color: black;
     opacity: 0.8;
   }
-  .contac .segContainer .seguinos {
+  .contac .datos .segContainer .seguinos {
     padding-left: 50px;
   }
-  .contac .segContainer .seguinos .contenContacto {
+  .contac .datos .segContainer .seguinos .contenContacto {
     display: flex;
     align-items: center;
   }
-  .contac .segContainer .seguinos .contenContacto p {
+  .contac .datos .segContainer .seguinos .contenContacto p {
     margin-bottom: 0;
     padding: 10px;
   }
@@ -536,23 +542,35 @@ footer h6 {
     background-position: 50%;
     height: 100vh;
     align-items: center;
+    flex-direction: column;
   }
-  .contac .contContainer h3 {
+  .contac .formulario {
+    position: relative;
+    top: 0%;
+    width: 100%;
+  }
+  .contac .datos {
+    top: 0;
+  }
+  .contac .datos .contContainer {
+    top: 0;
+  }
+  .contac .datos .contContainer h3 {
     background-color: black;
     opacity: 0.8;
   }
-  .contac .segContainer h3 {
+  .contac .datos .segContainer h3 {
     background-color: black;
     opacity: 0.8;
   }
-  .contac .segContainer .seguinos {
+  .contac .datos .segContainer .seguinos {
     padding-left: 50px;
   }
-  .contac .segContainer .seguinos .contenContacto {
+  .contac .datos .segContainer .seguinos .contenContacto {
     display: flex;
     align-items: center;
   }
-  .contac .segContainer .seguinos .contenContacto p {
+  .contac .datos .segContainer .seguinos .contenContacto p {
     margin-bottom: 0;
     padding: 10px;
   }

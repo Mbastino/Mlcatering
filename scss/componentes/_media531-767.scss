@@ -61,29 +61,42 @@
     background-position: 50%;
     height: 100vh;
     align-items: center;
-    .contContainer{
-        h3{
-            background-color: black;
-            opacity: 0.8;
-        }
+    flex-direction: column;
+
+    .formulario{
+        position: relative;
+        top: 0%;
+        width: 100%;
     }
-    .segContainer{
-        h3{
-            background-color: black;
-            opacity: 0.8;
+    .datos{
+        top: 0;
+        .contContainer{
+            top: 0;
+            h3{
+                background-color: black;
+                opacity: 0.8;
+            }
         }
-        .seguinos{
-            padding-left: 50px;
-            .contenContacto{
-                display: flex;
-                align-items: center;
-                p{
-                    margin-bottom: 0;
-                    padding: 10px;
+        .segContainer{
+            h3{
+                background-color: black;
+                opacity: 0.8;
+            }
+            .seguinos{
+                padding-left: 50px;
+                .contenContacto{
+                    display: flex;
+                    align-items: center;
+                    p{
+                        margin-bottom: 0;
+                        padding: 10px;
+                    }
                 }
             }
         }
     }
+    
+    
   }
 
 }
