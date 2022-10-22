@@ -455,14 +455,20 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 200%;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
   }
   .contac .formulario {
     position: relative;
     top: 0%;
     width: 100%;
+  }
+  .contac .datos {
+    top: 0;
+  }
+  .contac .datos .contContainer {
+    top: 0%;
   }
   .contac .datos .contContainer h3 {
     background-color: black;

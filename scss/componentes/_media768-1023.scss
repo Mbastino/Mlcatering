@@ -57,16 +57,18 @@
   /*Contacto*/
   .contac{
     background-position: 50%;
-    height: 200%;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
     .formulario{
         position: relative;
         top: 0%;
         width: 100%;
     }
     .datos{
+        top: 0;
         .contContainer{
+            top: 0%;
             h3{
                 background-color: black;
                 opacity: 0.8;
