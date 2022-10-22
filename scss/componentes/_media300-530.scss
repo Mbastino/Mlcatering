@@ -68,20 +68,21 @@
     /*Contacto*/
     .contac{
         background-position: 50%;
-        height: 100vh;
         align-items: center;
         flex-direction: column;
-        position: relative;
+        height: 200%;
+
     
         .formulario{
             position: relative;
-            top: 300px;
+            top: 10%;
             width: 100%;
         }
         .datos{
+            flex-direction: column;
             .contContainer{
                 flex-direction: column;
-                top: 60%;
+                top: 25%;
                 width: 100%;
                 .contacto{
                     padding: 0;
@@ -96,7 +97,9 @@
                 }
             }
             .segContainer{
+                position: relative;
                 flex-direction: column;
+                top: 60%;
                 width: 100%;
          
                 h3{

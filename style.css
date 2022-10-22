@@ -308,8 +308,6 @@ footer h6 {
   background-image: url(./img/fondo-contacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  top: 0;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
@@ -628,19 +626,21 @@ footer h6 {
   /*Contacto*/
   .contac {
     background-position: 50%;
-    height: 100vh;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    height: 200%;
   }
   .contac .formulario {
     position: relative;
-    top: 300px;
+    top: 10%;
     width: 100%;
+  }
+  .contac .datos {
+    flex-direction: column;
   }
   .contac .datos .contContainer {
     flex-direction: column;
-    top: 60%;
+    top: 25%;
     width: 100%;
   }
   .contac .datos .contContainer .contacto {
@@ -655,7 +655,9 @@ footer h6 {
     margin: 5px 0 0 0;
   }
   .contac .datos .segContainer {
+    position: relative;
     flex-direction: column;
+    top: 60%;
     width: 100%;
   }
   .contac .datos .segContainer h3 {
